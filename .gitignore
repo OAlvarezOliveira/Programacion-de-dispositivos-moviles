@@ -13,3 +13,20 @@
 .externalNativeBuild
 .cxx
 local.properties
+# El clon de Kotlin Koans NO se versiona aquí (tiene su propio upstream)
+kotlin-koans/
+
+# Kotlin / Gradle / IntelliJ-Android Studio
+.gradle/
+build/
+out/
+.idea/
+*.iml
+local.properties
+
+# Local Pi runtime state
+.atl/
+
+# CodeGraph/Engram — indices locales, no versionar
+.engram/
+.codegraph/
