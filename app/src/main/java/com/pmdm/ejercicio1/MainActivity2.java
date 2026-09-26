@@ -1,5 +1,6 @@
 package com.pmdm.ejercicio1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +20,11 @@ public class MainActivity2 extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        findViewById(R.id.button2).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 }

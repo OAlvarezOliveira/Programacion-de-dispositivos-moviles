@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ejercicio1</string>
+    <string name="activity_1">VENTANA 1</string>
+    <string name="activity_2">VENTANA 2</string>
+    <string name="button1">Ir a 2</string>
+    <string name="button2">Ir a 1</string>
 </resources>
