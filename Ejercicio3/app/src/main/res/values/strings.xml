@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Ejercicio 3</string>
+    <string name="buttonMeteTFL">Llamar a</string>
     <string name="button">Ir a Italia</string>
     <string name="button2">Ir a España</string>
+    <string name="button3">Acciones por Intents</string>
+    <string name="button31">Llamar por TLF</string>
+    <string name="button32">Map</string>
+    <string name="button33">Camera</string>
+    <string name="button34">SendTo</string>
+
+
 </resources>
