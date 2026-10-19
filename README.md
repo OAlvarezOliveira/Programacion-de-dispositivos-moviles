@@ -9,5 +9,10 @@ Repo de la asignatura de clase (Android Studio). Cada ejercicio es un proyecto A
 - **Ejercicio1/** — navegación entre activities con Intent + strings de recursos. Incluye `base-personal/` (plan de estudio propio en Kotlin plano, migrado desde `kotlin-learning`, no es la app oficial).
 - **Ejercicio2/** — ejercicio de clase del 28/09.
 - **Ejercicio3/** — ejercicio de clase del 28/09.
+- **BanderaKTheme/** — bandera de España con Jetpack Compose.
+- **HTML5/** — ejercicio de etiquetas semánticas HTML5.
+- **Mondrain/** — cuadro de Mondrian con Compose.
+- **primeroK/** — primeros pasos con Kotlin y Compose (`TarjetaPerfil`).
+- **AlineacionesTarjeta/** — ejercicio 1.4.1 (Alineaciones) con Compose: tarjeta maquetada con `Box`, `Row` y `Column`.
 
 Cada carpeta se abre en Android Studio como proyecto independiente (tiene su propio `gradlew`, `settings.gradle` y `.idea/`).
