@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Email
@@ -29,6 +30,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -75,7 +78,11 @@ fun Login(modifier: Modifier = Modifier) {
             leadingIcon = { Icon(Icons.Default.Email, contentDescription = "Email Value") },
             value = mailValue,
             onValueChange = { mailValue = it },
-            label = { Text("Correo") }
+            label = { Text("Correo") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Email,
+                imeAction = ImeAction.Next
+            )
         )
         Spacer(Modifier.height(16.dp))
         TextField(
@@ -84,7 +91,11 @@ fun Login(modifier: Modifier = Modifier) {
             value = passValue,
             visualTransformation = PasswordVisualTransformation(),
             onValueChange = { passValue = it },
-            label = { Text("Contraseña") }
+            label = { Text("Contraseña") },
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Password,
+                imeAction = ImeAction.Done
+            )
         )
         Spacer(Modifier.height(16.dp))
         Button(    onClick = { },
