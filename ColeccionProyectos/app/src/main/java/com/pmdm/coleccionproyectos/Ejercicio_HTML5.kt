@@ -19,7 +19,7 @@ import androidx.compose.ui.Alignment
 
 
 @Composable
-fun Ejercicio_HTML5(modifier: Modifier = Modifier) {
+fun Ejercicio_HTML5(onBack: () -> Unit,modifier: Modifier = Modifier) {
     Box ( modifier=modifier.fillMaxSize()) {
         Column( modifier=modifier.fillMaxSize()) {
             Box(modifier = Modifier.fillMaxWidth().weight(1f).padding(8.dp).clip(RoundedCornerShape(12.dp)).background(Color.LightGray) , contentAlignment = Alignment.Center) {Text(text = "HEADER")}

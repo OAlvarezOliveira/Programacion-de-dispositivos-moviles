@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun Ejercicio_Encuesta(modifier: Modifier = Modifier) {
+fun Ejercicio_Encuesta(onBack: () -> Unit,modifier: Modifier = Modifier) {
     var aceptaPromociones by remember { mutableStateOf(false) }
     var nivelSatisfaccion by remember { mutableFloatStateOf(3f) }
     var turnoElegido by remember { mutableStateOf("Mañana") }

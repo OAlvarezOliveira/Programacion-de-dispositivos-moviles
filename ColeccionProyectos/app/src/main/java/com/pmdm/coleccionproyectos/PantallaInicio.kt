@@ -84,9 +84,9 @@ fun PantallaInicio(onNavigateTo: (String) -> Unit) {
             }
 
             Spacer(modifier = Modifier.height(16.dp))
-            // Botón que ejecuta la lambda para navegar al Ejercicio_Mondraid
-            Button(onClick = { onNavigateTo(ListaProyectos.Ejercicio_Mondraid.route) }) {
-                Text("Ir al Ejercicio_Mondraid")
+            // Botón que ejecuta la lambda para navegar al Ejercicio_Mondrain
+            Button(onClick = { onNavigateTo(ListaProyectos.Ejercicio_Mondrain.route) }) {
+                Text("Ir al Ejercicio_Mondrain")
             }
 
             Spacer(modifier = Modifier.height(16.dp))

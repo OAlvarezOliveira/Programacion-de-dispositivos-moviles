@@ -18,10 +18,11 @@ sealed class ListaProyectos(val route: String) {
 
     object Ejercicio_Login : ListaProyectos("Ejercicio_Login")
 
-    object Ejercicio_Mondraid : ListaProyectos("Ejercicio_Mondraid")
+    object Ejercicio_Mondrain : ListaProyectos("Ejercicio_Mondrain")
 
     object Ejercicio_Preferencias : ListaProyectos("Ejercicio_Preferencias")
 
     object Ejercicio_Tarjeta : ListaProyectos("Ejercicio_Tarjeta")
 
+    object Ejercicio_Perfil : ListaProyectos("Ejercicio_Perfil")
 }

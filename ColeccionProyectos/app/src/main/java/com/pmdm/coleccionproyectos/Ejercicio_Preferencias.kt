@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun Ejercicio_Preferencias(modifier: Modifier = Modifier) {
+fun Ejercicio_Preferencias(onBack: () -> Unit,modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()

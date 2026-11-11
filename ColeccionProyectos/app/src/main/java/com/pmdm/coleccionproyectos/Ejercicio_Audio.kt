@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun Ejercicio_Audio(modifier: Modifier = Modifier) {
+fun Ejercicio_Audio(onBack: () -> Unit,modifier: Modifier = Modifier) {
 
     var opcionSeleccionada by remember { mutableStateOf(480) }
     var  volumen by remember { mutableStateOf(50) }

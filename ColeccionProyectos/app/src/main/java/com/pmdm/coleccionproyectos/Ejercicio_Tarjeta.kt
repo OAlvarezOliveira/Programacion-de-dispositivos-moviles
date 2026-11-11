@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun Ejercicio_Tarjeta(modifier: Modifier = Modifier) {
+fun Ejercicio_Tarjeta(onBack: () -> Unit,modifier: Modifier = Modifier) {
 
     val contexto = LocalContext.current
 

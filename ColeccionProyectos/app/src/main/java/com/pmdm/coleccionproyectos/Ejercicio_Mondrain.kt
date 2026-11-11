@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Ejercicio_Mondraid(modifier: Modifier = Modifier) {
+fun Ejercicio_Mondrain(onBack: () -> Unit,modifier: Modifier = Modifier) {
 
 
     Column( modifier=modifier.fillMaxSize().background(Color.Black)) {

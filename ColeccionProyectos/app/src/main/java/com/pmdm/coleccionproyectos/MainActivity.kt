@@ -40,7 +40,7 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio_Audio
+        // Ruta 3: Pantalla del Ejercicio_Audio
         composable(ListaProyectos.Ejercicio_Audio.route) {
             Ejercicio_Audio(
                 onBack = {
@@ -48,7 +48,7 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio_Bandera
+        // Ruta 4: Pantalla del Ejercicio_Bandera
         composable(ListaProyectos.Ejercicio_Bandera.route) {
             Ejercicio_Bandera(
                 onBack = {
@@ -56,7 +56,7 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio_Calculadora
+        // Ruta 5: Pantalla del Ejercicio_Calculadora
         composable(ListaProyectos.Ejercicio_Calculadora.route) {
             Ejercicio_Calculadora(
                 onBack = {
@@ -64,7 +64,7 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio_Encuesta
+        // Ruta 6: Pantalla del Ejercicio_Encuesta
         composable(ListaProyectos.Ejercicio_Encuesta.route) {
             Ejercicio_Encuesta(
                 onBack = {
@@ -72,7 +72,7 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio_HTML5
+        // Ruta 7: Pantalla del Ejercicio_HTML5
         composable(ListaProyectos.Ejercicio_HTML5.route) {
             Ejercicio_HTML5(
                 onBack = {
@@ -80,23 +80,26 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio A
+        // Ruta 8: Pantalla del Ejercicio_Login
         composable(ListaProyectos.Ejercicio_Login.route) {
             Ejercicio_Login(
                 onBack = {
                     navController.popBackStack()
+                } ,
+                onLogin = {
+                    navController.navigate(ListaProyectos.Ejercicio_Perfil.route)
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio A
-        composable(ListaProyectos.Ejercicio_Mondraid.route) {
-            Ejercicio_Mondraid(
+        // Ruta 9: Pantalla del Ejercicio_Mondrain
+        composable(ListaProyectos.Ejercicio_Mondrain.route) {
+            Ejercicio_Mondrain(
                 onBack = {
                     navController.popBackStack()
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio A
+        // Ruta 10: Pantalla del Ejercicio_Preferencias
         composable(ListaProyectos.Ejercicio_Preferencias.route) {
             Ejercicio_Preferencias(
                 onBack = {
@@ -104,9 +107,17 @@ fun NavegacionApp() {
                 }
             )
         }
-        // Ruta 2: Pantalla del Ejercicio A
+        // Ruta 11: Pantalla del Ejercicio_Tarjeta
         composable(ListaProyectos.Ejercicio_Tarjeta.route) {
             Ejercicio_Tarjeta(
+                onBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
+        // Ruta 12: Pantalla del Ejercicio_Perfil
+        composable(ListaProyectos.Ejercicio_Perfil.route) {
+            PintaPerfil(
                 onBack = {
                     navController.popBackStack()
                 }

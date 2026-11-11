@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun Ejercicio_Calculadora(modifier: Modifier = Modifier) {
+fun Ejercicio_Calculadora(onBack: () -> Unit,modifier: Modifier = Modifier) {
 
     var resultado by remember { mutableStateOf("0") }
 
