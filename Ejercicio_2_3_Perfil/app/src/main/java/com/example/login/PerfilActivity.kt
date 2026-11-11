@@ -1,5 +1,7 @@
 package com.example.login
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,6 +25,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -49,6 +52,7 @@ class PerfilActivity : ComponentActivity() {
 
 @Composable
 fun pintaPerfil( name: String = "",modifier: Modifier = Modifier) {
+    val context = LocalContext.current
     Row(
         modifier = modifier.fillMaxWidth().border(1.dp, Color.Black).padding(12.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -66,8 +70,14 @@ fun pintaPerfil( name: String = "",modifier: Modifier = Modifier) {
                 Modifier,
                 Arrangement.spacedBy(8.dp)
                 ){
-                    Box(modifier = Modifier.size(24.dp).background(Color.Blue).clickable { })
-                    Box(modifier = Modifier.size(24.dp).background(Color.Black).clickable { })
+                    Box(modifier = Modifier.size(24.dp).background(Color.Blue).clickable {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com"))
+                        context.startActivity(intent)
+                    })
+                    Box(modifier = Modifier.size(24.dp).background(Color.Black).clickable {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://cifpcarballeira.com/moodle/my/index.php"))
+                        context.startActivity(intent)
+                    })
             }
         }
 
