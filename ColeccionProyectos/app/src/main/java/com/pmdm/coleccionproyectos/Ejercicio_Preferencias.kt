@@ -10,11 +10,18 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -28,11 +35,23 @@ import androidx.compose.ui.unit.sp
 
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Ejercicio_Preferencias(onBack: () -> Unit,modifier: Modifier = Modifier) {
-    Column(
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Perfil") }, navigationIcon = {
+                    IconButton(onClick = onBack) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Volver")
+                    }
+                }
+            )
+        }
+    ) { innerPadding ->Column(
         modifier = modifier
             .fillMaxSize()
+            .padding(innerPadding)
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
@@ -100,6 +119,7 @@ fun Ejercicio_Preferencias(onBack: () -> Unit,modifier: Modifier = Modifier) {
         ) {
             Text(fontSize = 20.sp,text = "Guardar cambios", color = Color.White)
         }
+    }
     }
 }
 
