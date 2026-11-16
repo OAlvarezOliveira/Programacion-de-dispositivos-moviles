@@ -52,7 +52,7 @@ fun MenuDesplegableEjemplo(modifier: Modifier = Modifier) {
     var menuExpandido by remember { mutableStateOf(false) }
     // Usamos un Box para anclar el menú flotante en la esquina superior derecha
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .padding(16.dp),
         contentAlignment = Alignment.TopEnd
