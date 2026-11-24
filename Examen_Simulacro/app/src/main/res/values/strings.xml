@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Examen_PDMD</string>
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_entrar">Entrar</string>
+
+    <string name="zapatilla_titulo">ADIDAS PRO MAX PDMD </string>
+    <string name="zapatilla_descripcion">Las mas comodas</string>
+    <string name="zapatilla_favorito">marcar como favorito</string>
+    <string name="zapatilla_siguiente">Siguiente</string>
+
+
+    <string name="formulario_titulo">Formulario de seleccion</string>
+    <string name="formulario_nombre">NOMBRE</string>
+    <string name="formulario_enviar">Enviar</string>
+    <string name="formulario_dialogo_titulo">Oferta Plus!</string>
+
+    <string name="formulario_plan">Elige tu plan</string>
+    <string name="formulario_plan_basico">Básico</string>
+    <string name="formulario_plan_premium">Premium</string>
+
+    <string name="formulario_terminos">Acepto los términos</string>
+    <string name="formulario_dialogo_cerrar">Cerrar</string>
+    <string name="formulario_boton_navegar">Ir a la lista</string>
+
+    <string name="lista_titulo">Mi lista</string>
+
+    <string name="lista_item_1">Kotlin</string>
+    <string name="lista_item_2">Compose</string>
+    <string name="lista_item_3">Navegación</string>
+    <string name="lista_item_4">Material 3</string>
+    <string name="lista_item_5">Cajas</string>
+    <string name="lista_item_6">Alerts</string>
+    <string name="lista_item_7">Resources</string>
+    <string name="lista_item_8">LazyColumns</string>
+    <string name="lista_item_9">Estados</string>
+    <string name="lista_item_10">ViewModel</string>
+    <string name="lista_item_11">Corrutinas</string>
+    <string name="lista_item_12">Animaciones</string>
+    <string name="lista_item_13">Modifiers</string>
+    <string name="lista_dialogo_cerrar">Cerrar</string>
+
+
+
+    <string name="menu_login">Login</string>
+    <string name="menu_zapatilla">Zapatilla</string>
+    <string name="menu_formulario">Formulario</string>
+    <string name="menu_lista">Lista</string>
+    <string name="menu_descripcion">Menú</string>
+
+
+
+
+</resources>
