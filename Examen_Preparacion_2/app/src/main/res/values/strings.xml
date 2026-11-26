@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Examen_Preparacion_2</string>
+
+    <!-- textos MENU HAMBURGUESA -->
+    <string name="menu_titulo">Cuenta</string>
+    <string name="menu_Usuario">Usuario</string>
+    <string name="menu_Preferencias">Preferencias</string>
+    <string name="menu_Salir">Salir</string>
+
+
+    <!-- textos LOGIN -->
+    <string name="pantallaLogin_Titulo">LOGIN</string>
+    <string name="pantallaLogin_TextField_usuario">Usuario</string>
+    <string name="pantallaLogin_TextField_password">Password</string>
+    <string name="pantallaLogin_navegar">Ir a Zapatillas</string>
+
+
+
+
+    <!-- textos ZAPATILLA -->
+    <string name="pantallaZapatilla_titulo">ADIDAS ZAPATILLAS</string>
+    <string name="pantallaZapatilla_navegar">Ir a Formulario</string>
+    <string name="pantallaZapatilla_zapatilla_descripcion">Zapatillas chunky de piel resistentes</string>
+    <string name="pantallaZapatilla_zapatilla_favorito">Lo quiero</string>
+
+
+
+
+
+    <!-- textos FORMULARIO -->
+    <string name="pantallaFormulario_titulo">Formulario Acceso</string>
+    <string name="pantallaFormulario_navegar">Ir a Lista</string>
+    <string name="pantallaFormulario_acepto">Aceptado</string>
+    <string name="pantallaFormulario_NOacepto">Sin Aceptar</string>
+    <string name="pantallaFormulario_TextField_nombre">Nombre</string>
+    <string name="pantallaFormulario_enviar">Enviar</string>
+    <string name="pantallaFormulario_cerrar">Cerrar</string>
+    <string name="pantallaFormulario_Alerta">Alerta</string>
+
+
+
+    <string name="pantallaFormulario_talla_41">41</string>
+    <string name="pantallaFormulario_talla_42">42</string>
+    <string name="pantallaFormulario_talla_43">43</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- textos LISTA -->
+    <string name="pantallaLista_navegar">Ir a Login</string>
+    <string name="pantallaLista_titulo">CATÁLOGO</string>
+    <string name="producto_1">Adidas Samba</string>
+    <string name="producto_2">Adidas Gazelle</string>
+    <string name="producto_3">Adidas Superstar</string>
+
+
+
+</resources>
